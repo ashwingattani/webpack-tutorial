@@ -1,0 +1,27 @@
+{
+  "name": "webpack_tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "prebuild": "del-cli dist -f",
+    "build": "webpack",
+    "server": "http-server ./dist",
+    "start": "npm run build && npm run server"
+  },
+  "author": "Ashwin Gattani",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "csp-webpack-plugin": "^2.0.2",
+    "css-loader": "^6.7.3",
+    "del-cli": "^5.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "http-server": "^14.1.1",
+    "lodash": "^4.17.21",
+    "style-loader": "^3.3.2"
+  }
+}
